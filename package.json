@@ -16,6 +16,10 @@
     "url": "https://github.com/STACK-Fintech/benchmark/issues"
   },
   "homepage": "https://github.com/STACK-Fintech/benchmark#readme",
+  "keywords": [
+    "benchmark",
+    "benchmarking"
+  ],
   "dependencies": {
     "debug": "^4.1.1",
     "exectimer": "^2.2.2",
