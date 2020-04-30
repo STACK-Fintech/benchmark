@@ -35,20 +35,23 @@ standardImplementation.event(eventMath, "Math.sqrt", (num, cb) => {
 });
 test.add(standardImplementation);
 
-const newImplementation = new Step("Q_rsqrt");
-
-newImplementation.setup(() => {
-  sqrtValue = Math.round(Math.random() * 1000);
-  setImmediate(() => {
-    eventMath.emit("Q_rsqrt", sqrtValue);
-  });
+const newImplementation = new Step({
+  name: "Q_rsqrt",
+  setup: () => {
+    sqrtValue = Math.round(Math.random() * 1000);
+    setImmediate(() => {
+      eventMath.emit("Q_rsqrt", sqrtValue);
+    });
+  },
+  event: {
+    emitter: eventMath,
+    eventName: "Q_rsqrt",
+    fn: (num, cb) => {
+      Q_rsqrt(num);
+      cb();
+    },
+  },
 });
-
-newImplementation.event(eventMath, "Q_rsqrt", (num, cb) => {
-  Q_rsqrt(num);
-  cb();
-});
-
 test.add(newImplementation);
 
 suite.add(test);
