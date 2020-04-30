@@ -48,8 +48,25 @@ makeWidget.teardown(() => {
   // If you need to clean something up, you'd do it here.
 });
 
-makeWidget.fn(() => {
-  createdWidget = Widget.create(widgetName);
+// You can give the function handler sync or async functions.
+makeWidget.fn(async () => {
+  createdWidget = await Widget.create(widgetName);
+});
+
+// You can use event handlers instead if your code is event-driven.
+// Note that you must:
+// - make sure the event is being emitted, otherwise your Test will
+// hang.
+// - accept a callback as the last parameter of your handler function
+// and call it when finished.
+makeWidget.event(Widget, "ordered", (cb) => {
+  Widget.create(widgetName)
+    .then(() => {
+      return cb();
+    })
+    .catch((err) => {
+      return cb(err);
+    });
 });
 
 // Steps can also be created with object definitions.

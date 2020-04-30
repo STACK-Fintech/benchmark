@@ -4,7 +4,9 @@
   "description": "A simple framework for benchmarking your functions.",
   "main": "index.js",
   "scripts": {
-    "test": "node test/basic.js"
+    "test": "npm run test:basic && npm run test:event",
+    "test:basic": "node test/basic.js",
+    "test:event": "node test/event.js"
   },
   "repository": {
     "type": "git",
