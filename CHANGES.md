@@ -1,3 +1,9 @@
+2020-04-30, Version 0.2.0
+=========================
+
+ * feat: add event support for Step (Kevin Delisle)
+
+
 2020-04-28, Version 0.1.1
 =========================
 
