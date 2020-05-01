@@ -1,3 +1,11 @@
+2020-05-01, Version 0.3.0
+=========================
+
+ * refactor: change handling of event-based steps (Kevin Delisle)
+
+ * refactor: dedupe creation of timers (Kevin Delisle)
+
+
 2020-04-30, Version 0.2.1
 =========================
 
