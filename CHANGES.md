@@ -1,3 +1,9 @@
+2020-05-01, Version 0.3.1
+=========================
+
+ * fix: use named callback for argument handling (Kevin Delisle)
+
+
 2020-05-01, Version 0.3.0
 =========================
 
