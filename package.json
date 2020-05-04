@@ -25,7 +25,7 @@
   "dependencies": {
     "debug": "^4.1.1",
     "exectimer": "^2.2.2",
-    "got": "^11.0.2",
+    "got": "^11.1.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
