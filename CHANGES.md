@@ -1,3 +1,9 @@
+2020-05-04, Version 0.3.2
+=========================
+
+ * fix: construct Tick objects on per-cycle basis (Kevin Delisle)
+
+
 2020-05-01, Version 0.3.1
 =========================
 
