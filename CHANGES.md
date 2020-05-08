@@ -1,3 +1,9 @@
+2020-05-08, Version 0.4.0
+=========================
+
+ * feat: datapoint collection and CSV output (Kevin Delisle)
+
+
 2020-05-04, Version 0.3.2
 =========================
 

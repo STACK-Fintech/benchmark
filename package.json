@@ -1,6 +1,6 @@
 {
   "name": "@stack-fintech/benchmark",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A simple framework for benchmarking your functions.",
   "main": "index.js",
   "scripts": {
