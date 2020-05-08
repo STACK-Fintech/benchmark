@@ -4,8 +4,9 @@
   "description": "A simple framework for benchmarking your functions.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:basic && npm run test:event",
+    "test": "npm run test:basic && npm run test:event && npm run test:basic-csv && echo 'Tests complete.'",
     "test:basic": "node test/basic.js",
+    "test:basic-csv": "node test/basic-csv.js",
     "test:event": "node test/event.js"
   },
   "repository": {
@@ -26,7 +27,8 @@
     "debug": "^4.1.1",
     "exectimer": "^2.2.2",
     "got": "^11.1.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "papaparse": "^5.2.0"
   },
   "devDependencies": {
     "@stack-fintech/eslint-config": "^2.0.0",
