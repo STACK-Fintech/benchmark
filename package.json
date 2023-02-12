@@ -26,7 +26,7 @@
   "dependencies": {
     "debug": "^4.1.1",
     "exectimer": "^2.2.2",
-    "got": "^11.1.0",
+    "got": "^12.5.3",
     "lodash": "^4.17.15",
     "papaparse": "^5.2.0"
   },
